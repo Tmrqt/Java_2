@@ -4,15 +4,16 @@ import java.util.Arrays;
 public class Task_2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in).useDelimiter("\n");
         int n = input.nextInt();  
         String[] recipes = new String[n]; 
         for (int i = 0; i < n; i++) {
-            recipes[i] = input.next();
+            recipes[i] = scanner.next();
         } 
         int m = input.nextInt();
         String[] replases = new String[m];
         for (int j = 0; j < m; j++) {
-            replases[j] = input.next();
+            replases[j] = scanner.next();
         } 
         String[] sep_replases = new String[2];
         for (int j = 0; j < m; j++) {
